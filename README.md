@@ -1,74 +1,116 @@
-# R'Group (Campus Nest) CS 180 Project
+# CampusNest
 
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-<br/>
-![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+CampusNest is a comprehensive full-stack web platform designed specifically for UC Riverside students to explore, rate, and share housing options around campus. The platform aims to simplify the housing search process by creating a centralized, trusted community of UCR students sharing their housing experiences.
 
-## Figma
+## 🎯 About The Project
 
-[R'Group](<[https://www.figma.com/](https://www.figma.com/file/6jSrYqVtIoz97gzjkvtOwI/Javi-Becerril's-team-library?type=design&node-id=2311%3A2&mode=dev&t=Iij0jdks5Uc5aqh0-1)>)
+CampusNest addresses the critical need for reliable student housing information at UCR by providing:
+- A secure, UCR student-exclusive platform using OAuth 2.0 authentication
+- Verified student reviews and ratings of local housing options
+- Detailed housing listings with comprehensive information
+- A user-friendly interface for posting and discovering housing opportunities
 
-## Node.js
+## 🚀 Features
 
-R'Group runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+- Secure UCR student authentication via OAuth 2.0
+- Modern and responsive UI built with Next.js 14
+- Student-verified housing reviews and ratings
+- Housing listing creation and management
+- Firebase integration for backend services
+- Styling with Tailwind CSS and Bootstrap
+- Smooth animations with Framer Motion
+- Component-based architecture
+- Robust development tooling
 
-## Next.js
+## 🛠️ Tech Stack
 
-This project is built using [Next.js](https://nextjs.org), a React framework. Next.js is automatically installed when you install all dependencies for this project.
+- **Frontend Framework:** Next.js 14, React 18
+- **Styling:** Tailwind CSS, Bootstrap, React Bootstrap
+- **Backend/Database:** Firebase
+- **Animation:** Framer Motion
+- **Icons:** Heroicons, React Icons
+- **HTTP Client:** Axios
+- **Development Tools:**
+  - ESLint for code linting
+  - Prettier for code formatting
+  - Husky for git hooks
+  - PostCSS for CSS processing
 
-## Environment Variables
+## 📦 Prerequisites
 
-The following environment variables are required and must be stored in an `.env` file:
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+- Git
 
-```env
-N/A
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone [repository-url]
+   cd R-Group
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables**
+   - Create a `.env.local` file in the root directory
+   - Add necessary environment variables (refer to `.env.example` if available)
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+- `npm run check` - Check code formatting
+- `npm run eslint` - Run ESLint with specific extensions
+
+## 🔧 Project Structure
+
+```
+R-Group/
+├── src/
+│   ├── app/          # Next.js app directory
+│   ├── components/   # Reusable React components
+│   ├── data/        # Static data and configurations
+│   ├── public/      # Static assets
+│   └── utils/       # Utility functions
+├── public/          # Public assets
+└── [Configuration files]
 ```
 
-## Commands
+## 🤝 Contributing
 
-### Dependencies
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-```bash
-# Install dependencies
-npm i
+## 📄 License
 
-# Add dependency
-npm i <dependency>
+This project is licensed under the terms of the license included with this repository.
 
-# Remove dependency
-npm un <dependency>
-```
+## 👥 Contributors
 
-### Running the Website Locally
+See [Contributors.jsx](./Contributors.jsx) for a list of project contributors.
 
-```bash
-# Open a browser at localhost:3000
-npm run dev
-```
+---
 
-### Formatting Code via Prettier
-
-```bash
-# Rewrite code recursively with proper formatting
-npm run format
-
-# Show formatting differences recursively
-npm run check
-```
-
-### Linting Code via Eslint
-
-```bash
-npm run eslint
-```
-
-### Build the Website
-
-```bash
-npm run build
-```
+Made with ❤️ by the R-Group team
